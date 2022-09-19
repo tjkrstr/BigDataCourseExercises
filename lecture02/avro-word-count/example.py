@@ -22,4 +22,6 @@ with AvroReader(client, '/word-count.avro') as reader:
     print('\n')
     # Print a list of the data
     print(list(reader))
-  
+
+with client.read('/alice-in-wonderland.txt', encoding='utf-8') as reader:
+    print(reader.read{})
