@@ -14,4 +14,5 @@ with client.read('/alice-in-wonderland.txt', encoding='utf-8') as reader:
     client.write('/word-count.json', dumps(wordcount), encoding='utf-8', overwrite=True)
 
 
-pq.ParquetData
+with client.read('/alice-in-wonderland.txt', encoding='utf-8') as reader:
+    print(reader.read{})
